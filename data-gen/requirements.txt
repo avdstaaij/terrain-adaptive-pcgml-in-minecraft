@@ -1,0 +1,7 @@
+amulet-core==1.9.11
+mcrcon==0.7.0
+numpy==1.24.2
+pyglm==2.7.0
+termcolor==2.1.1
+tqdm==4.64.1
+virtualenv==20.19.0

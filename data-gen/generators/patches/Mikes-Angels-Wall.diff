@@ -1,0 +1,39 @@
+--- src/city/build_city.py
++++ src/city/build_city.py
+@@ -43,27 +43,27 @@
+
+
+ def build_city(itf: Interface, world_data: WorldData, world: World):
+-    print("preparing build area..")
+-    prepare_build_area(itf, world_data, world)
++    # print("preparing build area..")
++    # prepare_build_area(itf, world_data, world)
+
+     # these are all built using local world coordinates relative to build rect
+     transform = Transform(addY(world.build_rect.offset, y=0))
+     itf.transform.push(transform)
+
+-    print("building roads..")
+-    build_roads(itf, world_data, world)
++    # print("building roads..")
++    # build_roads(itf, world_data, world)
+
+     print("building walls..")
+     build_walls(itf, world_data, world)
+
+-    print("building houses..")
+-    build_houses(itf, world_data, world)
++    # print("building houses..")
++    # build_houses(itf, world_data, world)
+
+-    print("building boats..")
+-    build_boats(itf, world_data, world)
++    # print("building boats..")
++    # build_boats(itf, world_data, world)
+
+-    print("building extra buildings..")
+-    build_extra_buildings(itf, world_data, world)
++    # print("building extra buildings..")
++    # build_extra_buildings(itf, world_data, world)
+
+     itf.transform.pop(transform)
